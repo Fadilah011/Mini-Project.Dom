@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-</head>
 <body>
   <!-- Navigasi -->
   <div class="nav-wrapper">
@@ -41,11 +40,15 @@
             data-bs-target="#signInModal" class="bar"><span>Sign in</span>
           </button>
           </a>
+                <ul>
+            <img src="images/moon.png" alt=".." id="iconss">
+                </ul>
         </ul>
           </div>
         </div> 
       </div>
     </div>
+
 <!-- carousel -->
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -107,7 +110,7 @@
       </div>
       <!-- card -->
           <div class="row"style="margin-top: 100px; margin-left: 5%; margin-right: 5% ">
-            <h2>Anime Terbaru</h2>
+            <h2 class="color">Anime Terbaru</h2>
         <div class="col-12 col-md-6 col-lg-3 p-4">
           <div class="card"style="border: none" data-bs-toggle="modal" data-bs-target="#product1">
             <img src="images/JUJUTSU KAISEN 0 .png" class="card-img-top" alt="" >
@@ -290,7 +293,7 @@
           
           </div>
         </div>
-        <h2>Anime Popular</h2>
+        <h2 class="color">Anime Popular</h2>
         <div class="col-12 col-md-6 col-lg p-4">
           <div
             class="card"
@@ -870,7 +873,7 @@
   </div>
   </div>
   </div>
-  </class=>
+  <!-- login/registr -->
   <script>
     var x = document.getElementById("Login");
     var y = document.getElementById("register");
@@ -886,6 +889,20 @@
       y.style.left = "450px";
       z.style.left = "0";
   }
+  </script>
+<!-- mode gelap -->
+  <script>
+    var iconss = document.getElementById("iconss");
+
+iconss.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      iconss.src = "images/sun.png";
+    }else{
+      iconss.src = "images/moon.png";
+    }
+    
+}
   </script>
   <!-- Footer -->
 

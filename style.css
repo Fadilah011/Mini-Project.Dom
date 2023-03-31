@@ -3,9 +3,17 @@
     --body-bg:#1f0b0bd1;
     --box-bd:#221f1f;
     --text-color:#ffff;
+    --primary-color:#edf3fc;
+    --secondary-color:#212121;
 
     --nav-height:60px;
     --space-top:30px;
+}
+.dark-theme{
+     --primary-color:#000106;
+    --secondary-color:#fff;
+
+    
 }
 *{
     margin: 0;
@@ -13,11 +21,19 @@
     font-family:sans-serif;
     box-sizing: border-box;
 }
+
+#iconss{
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
 html{
     font-size: 17px;
 }
 body{
-    background-color: #010101;
+    background-color:var(--primary-color);
     color: var(--text-color);
     padding-top: var(--main-color);
 }  
@@ -226,10 +242,10 @@ color: unset;
 }
 /* bacrumbb */
 .breadcrumb{
-    background-color: #010101;
+    background-color:var(--primary-color);
 }
 .breadcrumb-item a {
-        color: #ffffff;
+        color: var(--secondary-color);
     }
 .breadcrumb-item a:hover{
     color:red;
@@ -237,6 +253,9 @@ color: unset;
 
 
 /* card */
+.color{
+    color: var(--secondary-color);
+}
 .card-body{
     background-color: #280406;
 }
@@ -249,6 +268,10 @@ color: unset;
     box-shadow: 0 0.10rem 2rem #af2b2b;
     transform: translateY(-10px);
 }
+.card-title h2{
+    color: var(--secondary-color);
+}
+
 .star-icon {
     margin: 5px;
     color: rgb(255, 255, 255);
@@ -263,7 +286,8 @@ color: unset;
     color: #0a0808;
 }
 #footer{
-    background-color: #010101;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
     padding: 3% 15%;
     cursor: #fff;
     text-align: center;
@@ -280,51 +304,6 @@ color: unset;
     text-decoration: none;
     color: #ff0184d1;
 }
-/* about us */
-.about{
-    width: 100%;
-    padding: 76px 0px;
-    background-color: #191919;
-}
-.aboutt img{
-    height: 500px;
-    width: 590px;
-}
-.about-textt{
-    width: 550px;
-}
-.mainm{
-    width: 1110px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.about-textt h1{
-    color: white;
-    font-size: 60px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-.about-textt h5{
-    color: white;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-}
-.span{
-    color: #de101a;
-}
-.about-textt p{
-    color: rgba(103, 3, 9, 0.8);
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
-}
-
 
 
 
